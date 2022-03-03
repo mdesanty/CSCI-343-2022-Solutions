@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS GiftsDb;
+CREATE DATABASE GiftsDb;
+
+use GiftsDb;
+
+CREATE TABLE Gifts (
+  Id int NOT NULL AUTO_INCREMENT,
+  Name VARCHAR(255) NOT NULL UNIQUE,
+  PRIMARY KEY (Id)
+);
+
+INSERT INTO Gifts(Name) VALUES("Nintendo");
+INSERT INTO Gifts(Name) VALUES("Xbox");
